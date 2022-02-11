@@ -1,0 +1,35 @@
+h1 { font-family: broadway;
+    text-align: center;
+    color: rgb(23, 116, 23)}
+h2 { font-family: Bauhaus Modern;
+    text-align: center;
+    color: rgb(4, 173, 4)}
+li {font-family: rockwell;
+    color: rgb(0, 0, 0)}
+#cod { color: red;
+    font-size: 20px;
+    font-weight: bold}
+a {color: rgb(18, 102, 10)}
+hr {color:rgb(18, 102, 10);
+}
+.background {background-image : 
+    linear-gradient(210deg, #f1f4f5 0%, #be2fa7 70%, #2908b9 90%)}
+
+.generalcontainer{display:grid;
+    grid-template-rows: 20% 1fr;
+    grid-template-areas:"header content"}
+.headercontainer{grid-area: header;
+    display:grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas: 
+    "photo title"
+    "description description"
+
+}
+#photo {grid-area:photo}
+#title {grid-area:title}
+#description {grid-area:description}
+
+.contentcontainer{grid-area: content;
+    display: grid;
+}
