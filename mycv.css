@@ -13,23 +13,52 @@ a {color: rgb(18, 102, 10)}
 hr {color:rgb(18, 102, 10);
 }
 .background {background-image : 
-    linear-gradient(210deg, #f1f4f5 0%, #be2fa7 70%, #2908b9 90%)}
+    linear-gradient(150deg, #f1f4f5 0%, #be2fa7 60%, #2908b9 90%);
+}
 
 .generalcontainer{display:grid;
     grid-template-rows: 20% 1fr;
-    grid-template-areas:"header content"}
+    grid-template-areas:"header" "content"}
 .headercontainer{grid-area: header;
     display:grid;
     grid-template-columns: 20% 1fr;
     grid-template-areas: 
     "photo title"
-    "description description"
+    "photo description"
 
 }
 #photo {grid-area:photo}
+#img{
+    width:100%;
+    height:100%
+}
 #title {grid-area:title}
-#description {grid-area:description}
+#description {grid-area:description;
+    font-family: broadway
+}
 
 .contentcontainer{grid-area: content;
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50% 30%
+}
+.experience{grid-area: 1/1/2/3;
+    width: 100%;
+    height: 100%
+}
+.education{grid-area: 1/3/2/-1;
+    width: 100%;
+    height: 100%
+}
+.skills{grid-area: 2/1/-1/4;
+    width: 100%;
+    height: 100%
+}
+.languages{grid-area: 2/4/-1/5;
+    width: 100%;
+    height: 100%
+}
+.contacts{grid-area: 2/5/-1/-1;
+    width: 100%;
+    height: 100%
 }
