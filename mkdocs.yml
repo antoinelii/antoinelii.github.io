@@ -1,0 +1,9 @@
+site_name: "Antoine LI Webpage"
+site_url: "https://antoinelii.github.io"
+theme:
+  name: "material"
+nav:
+  - Home: index.md
+  - About: about.md
+  - Projects: projects.md
+  - Blog: blog.md
